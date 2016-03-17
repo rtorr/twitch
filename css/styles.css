@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  padding: 0 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 960px;
+  width: 80%;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+.main-heading {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.stream-top-container {
+  clear: both;
+  overflow: hidden;
+}
+
+.stream-results-count {
+  display: inline-block;
+  float: left;
+}
+
+.stream-pagination {
+  float: right;
+  clear: both;
+  overflow: hidden;
+}
+
+.stream-pagination-text {
+  display: inline-block;
+  float: left;
+  margin: 0 10px;
+  line-height: 20px;
+}
+
+.stream-pagination-left-arrow, .stream-pagination-right-arrow {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+} 
+
+.stream-pagination-left-arrow {
+	border-right: 10px solid #ccc;
+}
+
+.stream-pagination-right-arrow {
+	border-left: 10px solid #ccc;
+}
+
+.stream-item-container {
+  display: block;
+  clear: both;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.stream-item-details-heading {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.stream-item-image-container, .stream-item-details-container {
+  display: inline-block;
+  float: left;
+}
+
+.stream-item-image-container {
+  max-width: 40%;
+}
+
+.stream-item-details-container {
+  width: 60%;
+  padding: 0 20px;
+  line-height: 20px;
+}
