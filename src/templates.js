@@ -29,7 +29,7 @@ el.prototype.remove = function() {
 export function emptyNode(node) {
   while (node.firstChild) {
     if(node.firstChild.remove){
-      node.firstChild.remove()
+      node.firstChild.remove();
     }else {
       node.removeChild(node.firstChild);  
     }
@@ -78,15 +78,15 @@ export function streamTopContainer(urlQuery, data) {
     });
   });
 
-  streamPagination.node.appendChild(streamPaginationLeftArrow.node)
-  streamPagination.node.appendChild(streamPaginationText.node)
-  streamPagination.node.appendChild(streamPaginationRightArrow.node)
+  streamPagination.node.appendChild(streamPaginationLeftArrow.node);
+  streamPagination.node.appendChild(streamPaginationText.node);
+  streamPagination.node.appendChild(streamPaginationRightArrow.node);
 
   const streamTopContainer = new el('div');
   streamTopContainer.node.setAttribute('class', 'stream-top-container');
 
-  streamTopContainer.node.appendChild(streamResultsCount.node)
-  streamTopContainer.node.appendChild(streamPagination.node)
+  streamTopContainer.node.appendChild(streamResultsCount.node);
+  streamTopContainer.node.appendChild(streamPagination.node);
   return streamTopContainer;
 }
 
