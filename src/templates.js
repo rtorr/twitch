@@ -56,7 +56,7 @@ export function streamTopContainer(urlQuery, data) {
       data: {
         state: urlQuery,
         title: urlQuery.q,
-        url: `/?q=${urlQuery.q}&offset=${offset === 0 ? Math.floor(total / limit) * limit : offset - limit}&limit=${urlQuery.limit}`
+        url: `/twitch/?q=${urlQuery.q}&offset=${offset === 0 ? Math.floor(total / limit) * limit : offset - limit}&limit=${urlQuery.limit}`
       }
     });
   });
@@ -73,7 +73,7 @@ export function streamTopContainer(urlQuery, data) {
       data: {
         state: urlQuery,
         title: urlQuery.q,
-        url: `/?q=${urlQuery.q}&offset=${parseInt(total / (offset + limit), 10) > 0 ? offset + limit : 0}&limit=${urlQuery.limit}`
+        url: `/twitch/?q=${urlQuery.q}&offset=${parseInt(total / (offset + limit), 10) > 0 ? offset + limit : 0}&limit=${urlQuery.limit}`
       }
     });
   });
